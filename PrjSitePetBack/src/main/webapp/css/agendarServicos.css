@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=League+Gothic&display=swap&family=Montserrat:wght@300&display=swap&family=Noto+Sans:wght@300&display=swap&family=Inter');
+
+:root {
+    --FontTitulo: 'League Gothic', sans-serif;
+    --FontTexto: 'Kumbh Sans', sans-serif;
+    --corPrima: #5D50E0; /*Azul*/
+    --corSec: #FBBD44; /*Amrelo*/
+    --corBanner: #8473F7 /*Cor do banner azul*/
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    outline: 0;
+    list-style: none
+}
+
+main{
+	width:75%;
+	height:auto;
+	
+}
+
+picture{
+	display:flex;
+	justify-content:space-around;
+	width: 100%;
+	padding:1rem;
+	height:auto
+}
+
+
+picture img{
+	clip-path: circle(35%);
+	width: 600px
+}
+
+
+
+button.fechar{
+	box-sizing:content-box;
+	width:0.55em;
+	min-height:0.55em;
+	padding:.25em .25em;
+	position:absolute;
+	top: 2%;
+	right: 5%;
+	color:#000;
+	background:transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+	border:0;
+	border-radius:.25rem;
+	opacity:.5;
+	margin-top:5px;
+	margin-right:5px;
+}
+
+
+button.fechar:hover{
+	color:#000;
+	text-decoration:none;
+	opacity:.75
+}
+
+
+button.fechar:focus{
+	outline:0;box-shadow:0 0 0 .25rem rgba(13,110,253,.25);
+	opacity:1
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-top{
+	margin: 15% auto
+}
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  max-width: 30%;
+  padding: 5px 0;
+  border-radius: 5%;
+}
+
+.card-body{
+	max-width: 80%;
+}
+
+
+.carousel-inner {
+	width:100%;
+	height: auto;
+  padding: 2rem;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: white;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(500%);
+}
+@media (min-width: 768px) {
+
+}
+
+
+
+
+

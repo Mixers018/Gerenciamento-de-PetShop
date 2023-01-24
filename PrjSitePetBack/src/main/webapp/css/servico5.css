@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=League+Gothic&display=swap&family=Montserrat:wght@300&display=swap&family=Noto+Sans:wght@300&display=swap&family=Inter');
+
+:root {
+    --FontTitulo: 'League Gothic', sans-serif;
+    --FontCompra : ''Montserrat', sans-serif;';
+    --FontDisc: 'Noto Sans', sans-serif;
+    --FontTexto: 'Kumbh Sans', sans-serif;
+    --corPrima: #5D50E0; /*Azul*/
+    --corSec: #FBBD44; /*Amrelo*/
+    --corBanner: #8473F7 /*Cor do banner azul*/
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    outline: 0;
+    list-style: none
+}
+
+
+
+
+
+
+
+/*Main - Início*/
+main {
+    width: 75%;
+    margin: 5rem auto;
+    
+}
+
+/*Título e Botão de Adicionar Pet*/
+
+.titulo_e_btnAddPet{
+    width: 100%;
+    display: flex;
+}
+
+.titulo{
+    text-align: left;
+    padding-top: 0.3rem;
+    flex:1;
+}
+
+.btnAddPet{
+    text-align: right;
+    flex:1;
+}
+
+.titulo_e_btnAddPet h1{
+    font-size: 30px;
+    color:rgb(59, 59, 59);
+    font-weight: normal;
+}
+
+.btnAddPet a{
+    background-color: var(--corPrima);
+    color:white;
+    font-size: 20px;
+    font-weight: lighter;
+    width:10rem;
+    border-radius: .7rem;
+
+    transition: all .2s;
+    border: none
+}
+
+.btnAddPet a#pet:hover {
+    background-color: var(--corSec);
+    border: none
+}
+
+/*Fim do título e Botão de Adicionar Pet*/
+
+
+/* Serviço */
+
+body.cor{
+	background-image:url("background.jpeg"); 
+}
+
+.servico{
+    width:40%;
+    background-color: #fff;
+	border-radius: 15px;
+}
+
+.servico h2{
+    font-size: 25px;
+    color:black;
+}
+
+.servico h3{
+    font-size: 25px;
+    color:rgb(59, 59, 59);
+    font-weight: normal;
+}
+
+.servico p{
+    font-size: 20px;
+    color:rgb(59, 59, 59);
+    font-weight: normal;
+}
+
+.servico h4{
+    font-size: 25px;
+    color:black;
+}
+
+.tipoServico{
+    width: 100%;
+}
+
+.descrServico{
+    width: 100%;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.precoServico{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+.btnAgendar{
+    margin-top: 1rem;
+}
+
+.avaliacao{
+    margin-top: 1rem;
+}
+
+.btnAgendar a#agendar{
+    background-color: white;
+    color:var(--corPrima);
+    font-size: 20px;
+    font-weight: normal;
+    width:10rem;
+    border-radius: .7rem;
+
+    transition: all .2s;
+    border-color: var(--corPrima);
+}
+
+.btnAgendar a#agendar:hover {
+    font-weight: lighter;
+    background-color: var(--corSec);
+    border-color: var(--corSec);
+}
+
+
+.texto{
+    margin-top: 0rem;
+    float: left;
+}
+
+.icones{
+    float: left;
+    height:40px;
+}
+
+.icones{
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.patinhas{
+    display: flex;
+    margin-top: -0.5rem;
+   }
+  
+   .star-icon{
+    list-style-type: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-size: 40px;
+  }
+  .star-icon::before{
+    content: url(pataCheia.png);
+  }
+  .star-icon.ativo ~ .star-icon::before{
+    content: url(pataVazia.png);
+  }
+  .avaliacao:hover .star-icon::before{
+    content: url(pataCheia.png);
+  }
+  .star-icon:hover ~ .star-icon::before{
+    content: url(pataVazia.png);
+  }
+
+/* Fim do Serviço */
+
+/*Main - Fim*/
+
+
+@media screen and (max-width: 940px) {
+	
+	.servico{
+    width:100%;
+	}
+}
+
+@media screen and (max-width: 454px) {
+	main{
+	width:90%
+	}
+}

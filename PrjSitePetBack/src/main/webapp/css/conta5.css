@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=League+Gothic&display=swap');
+
+:root {
+    --FontTitulo: 'League Gothic', sans-serif;
+    --FontTexto: 'Kumbh Sans', sans-serif;
+    --corPrima: #5D50E0; /*Azul*/
+    --corSec: #FBBD44; /*Amrelo*/
+    --corBanner: #8473F7 /*Cor do banner azul*/
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none
+}
+
+main{
+    width:75%;
+    margin-top:70px;
+    margin-bottom:70px;
+}
+
+div.conteudo{
+    width:100%;
+    display:flex;
+}
+
+/*conteudo*/
+
+div.subMenu{
+    width:400px;
+}
+
+.botao{
+    width:100%;
+    height:20px;
+    text-align: left;
+}
+
+div.janela{
+    flex:1;
+}
+
+div.perfil{
+    height:80px;
+    display:flex;
+    margin-bottom: 15px;
+}
+
+div.imagem{
+    width:80px;
+}
+
+div.foto{
+    width:90%; 
+    height:90%; 
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    background-color: #eaeaea ;
+}
+
+img#fot{
+    width:100%;
+    height:100%;
+    clip-path:circle();
+}
+
+div.info{
+    flex:1; 
+}
+
+div.nome, div.email{
+    height:50%;
+    text-align: left;
+}
+
+div.nome h1, div.email h2{
+    margin-left:15px;
+}
+
+
+
+div#conta, div#seguranca, div#historico{
+    height:50px;
+}
+
+
+
+div#conta a, div#seguranca a, div#historico a{
+    width:250px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 55px;
+    border:none;
+    color:#474747;
+    font-weight:500;
+}
+
+div#conta a{
+    background-color: #eaeaea;
+}
+
+div#seguranca a, div#historico a{
+    background-color: white;
+}
+
+a#btnSeguranca:hover, a#btnHistorico:hover {
+    background-color: #f5f5f5;
+    color:#474747
+}
+
+a#btnSeguranca:focus, a#btnHistorico:focus {
+    background-color: #f5f5f5;
+    color:#474747
+}
+
+img#icone, img#icone2{
+    height:30px;
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 7px;
+}
+
+img#icone3{
+    height:30px;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+/*fim conteudo*/
+
+/*janela*/
+
+div.cont{
+    width:100%;
+    height:auto
+}
+
+div.ft{
+    width:100%;
+    height:40%;
+    padding-bottom:15px;
+    border-bottom: 1px solid gray;
+}
+
+div.ft a{
+    position:absolute;
+    right:12.5%;
+    margin-top: -35px;
+
+    background-color:#eaeaea;
+    width:7rem;
+    border-radius: .7rem;
+    font-size: 17px;
+    color:#474747;
+    font-weight:400;
+    transition: all .2s;
+    border: none
+}
+
+div.nomeJanela{
+    padding-top: 15px;
+    width:100%;
+    height:20%;
+    border-bottom: 1px solid gray;
+}
+
+div.emailJanela{
+    padding-top: 15px;
+    width:100%;
+    height:20%;
+    border-bottom: 1px solid gray;
+}
+
+div.img{
+    margin-top: 1rem;
+    width:8.3rem;
+    height:8.3rem;
+    margin-left: 0;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    background-color: #eaeaea ;
+}
+
+div.nomeJanela a, div.emailJanela a{
+    position:absolute;
+    right:12.5%;
+    margin-top: 15px;
+
+    background-color:#eaeaea;
+    width:7rem;
+    border-radius: .7rem;
+    font-size: 17px;
+    color:#474747;
+    font-weight:400;
+    transition: all .2s;
+    border: none
+}
+
+a#pet:hover {
+    background-color: var(--corSec);
+    border: none
+}
+
+
+/*foto*/
+
+#picture__input {
+    display: none;
+    }
+
+    .picture {
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+    cursor: pointer;
+    color: black;
+    }
+
+    .picture:hover {
+    color: #777;
+    background: #ccc;
+    }
+
+    .picture:active {
+    border-color: #5D50E0;
+    color: #5D50E0;
+    background: #eee;
+    }
+
+    .picture:focus {
+    color: #777;
+    background: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .picture__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    }
+    /*fim foto*/
+
+
+/*fim janela*/
+
+@media screen and (max-width: 1070px) {
+    
+    main{
+    width:80%
+    }
+    
+    div.conteudo{
+    flex-direction:column;
+	}
+	
+	div.subMenu{
+	margin-bottom:3rem;
+	width:100%;
+	}
+	
+	div.janela{
+    flex:1;
+    width:100%;
+	}
+	
+	div.janela a{
+	width:80px;
+	}
+	
+}

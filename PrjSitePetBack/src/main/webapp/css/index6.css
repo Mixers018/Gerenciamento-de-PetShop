@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=League+Gothic&display=swap');
+
+:root {
+    --FontTitulo: 'League Gothic', sans-serif;
+    --FontTexto: 'Kumbh Sans', sans-serif;
+    --corPrima: #5D50E0; /*Azul*/
+    --corSec: #FBBD44; /*Amrelo*/
+    --corBanner: #8473F7 /*Cor do banner azul*/
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    outline: 0;
+    list-style: none
+}
+
+
+/*Main - In�cio*/
+main {
+    width: 75%;
+    margin: 0 auto;
+    margin: 5rem auto;
+}
+
+/*Main - Fim*/
+
+
+
+
+/*Banner - Sobre - In�cio*/
+
+figure section.banner {
+    width: 100%;
+    height: 450px;
+    margin: 0rem auto;
+    border-radius: 15px;
+    position: relative;
+    background-color: var(--corBanner);
+}
+
+section.banner img {
+    position: absolute;
+    top: 15%;
+    width: 340px;
+    left: 5%
+}
+
+figure div {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    text-align: right;
+    width: 50%;
+    word-break: break-word;
+    overflow-wrap: break-word
+}
+
+figure h3 {
+    font-family: var(--FontTexto);
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    word-spacing: 7px;
+    word-break: break-word;
+    overflow-wrap: break-word
+}
+
+figure p {
+    font-family: var(--FontTexto);
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    word-break: break-word;
+    overflow-wrap: break-word
+}
+
+figure h3, figure p {
+    color: white;
+    margin: .7rem;
+}
+
+/*Banner - Sobre - Fim*/
+
+
+
+
+
+/*Mais sobre*/
+
+section.mais_sobre {
+    width: 100%;
+    height: 15rem;
+    margin: 5rem auto;
+    position: relative;
+    z-index: 2;
+}
+
+    section.mais_sobre div {
+        width: 65%;
+        position: absolute;
+        left: 0;
+    }
+
+
+        section.mais_sobre div h3 {
+            color: var(--corPrima);
+            text-transform: uppercase;
+            font-size: 32px;
+            font-family: var(--FontTexto);
+            line-height: 2.5rem;
+            font-weight: bolder;
+            word-break: break-word;
+            overflow-wrap: break-word
+        }
+
+        section.mais_sobre div p {
+            font-family: var(--FontTexto);
+            font-size: 22px;
+            color: black;
+            font-weight: 800;
+            padding: .5rem 0;
+            word-break: break-word;
+            overflow-wrap: break-word
+        }
+
+/*Fim MAIS SOBRE*/
+
+
+
+/*Banner 2*/
+
+figure section.banner2 {
+    width: 100%;
+    height: 450px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    position: relative;
+    background-color: var(--corSec);
+}
+
+section.banner2 img {
+    position: absolute;
+    top: 15%;
+    left: 5%
+}
+
+.txtBanner2{
+    text-align: right;
+    width: 38%
+}
+
+#Image2 {
+    width: 500px;
+}
+
+
+section.banner2 h3, section.banner2 p {
+    color: black;
+    font-weight: 800;
+    margin: .7rem;
+    word-break: break-word;
+    overflow-wrap: break-word
+}
+
+/*Fim Banner 2*/
+
+
+
+/*�rea de MSG*/
+
+input#txtAssunto, textarea#txtMsg, input#txtEmail {
+    width: 42.5rem;
+    border: none;
+    font-family: arial;
+    color: black;
+    font-weight: 400;
+    margin: .3rem auto;
+    padding: .5rem;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    outline: 0;
+    transition: border-color, box-shadow 0.2s
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border-color: #09d;
+    box-shadow: 0 0 0 1px #858585;
+}
+
+.area_usuario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8rem
+}
+
+div.area_Msg h3 {
+    color: var(--corPrima);
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Century Gothic';
+}
+
+div.area_Msg h4 {
+    color: #2e2e2d;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Century Gothic';
+}
+
+
+
+
+div.dados > div {
+    margin: 5rem
+}
+
+div.dados h3 {
+    color: #2e2e2d;
+    line-height: 5px;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Century Gothic';
+    word-break: break-word;
+    overflow-wrap: break-word
+}
+
+/*�rea de MSG*/
+
+
+
+
+
+
+/*
+#button:focus ~ ul,
+#button:active ~ ul,
+#button:hover ~ ul {
+    display: flex;
+}
+
+
+    #button:focus ~ ul:active {
+        display: flex
+    }
+*/
+
+
+@media screen and (max-width: 1000px) {
+
+
+    img#Image1{
+    	display:none
+    }
+
+	figure section.banner{
+	padding-top:0px;
+	height:300px;
+	margin-bottom:4rem
+	}
+	
+	.txtBanner{
+	text-align:left;
+	width:100%;
+	top:0;
+	right:0;
+	padding:20px;
+	}
+	
+	img#Image2{
+    	display:none
+    }
+
+	figure section.banner2{
+	padding-top:0px;
+	height:250px
+	}
+	
+	.txtBanner2{
+	text-align:left;
+	width:100%;
+	top:0;
+	right:0;
+	padding:20px;
+	}
+	
+	/*Mais sobre*/
+
+    section.mais_sobre {
+        width: 100%;
+        height: 20rem;
+        margin: 1rem auto;
+        position: relative;
+        z-index: 1;
+    }
+
+        section.mais_sobre div {
+            width: 80%;
+            position: absolute;
+            left: 2rem;
+        }
+
+            section.mais_sobre div h3 {
+                color: var(--corPrima);
+                text-transform: uppercase;
+                font-size: 28px;
+                font-family: var(--FontTexto);
+                line-height: 2rem;
+                font-weight: bolder;
+                word-break: break-word;
+                overflow-wrap: break-word
+            }
+
+            section.mais_sobre div p {
+                font-family: var(--FontTexto);
+                font-size: 18px;
+                color: black;
+                font-weight: 800;
+                padding: .5rem 0;
+                word-break: break-word;
+                overflow-wrap: break-word
+            }
+
+    /*Fim MAIS SOBRE*/
+	
+	/*�rea de MSG*/
+
+    input#txtAssunto, textarea#txtMsg, input#txtEmail {
+        width: 100%;
+    }
+
+    .area_usuario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*�rea de MSG*/
+
+}
+
+@media screen and (max-width: 740px) {
+	
+	figure section.banner{
+	height:350px;
+	margin-bottom:4rem
+	}
+}
+
+@media screen and (max-width: 640px) {
+	
+	figure section.banner{
+	height:500px;
+	}
+	
+	figure section.banner2{
+	height:300px
+	}
+}
+
+@media screen and (max-width: 535px) {
+	
+	
+	section.mais_sobre {
+		height:25rem
+	}
+ 	
+	figure section.banner{
+	height:630px;
+	margin-bottom:4rem
+	}
+	
+	figure section.banner2{
+	height:350px
+	}
+}
+	
+}

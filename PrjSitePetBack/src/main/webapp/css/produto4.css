@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=League+Gothic&display=swap');
+
+:root {
+    --FontTitulo: 'League Gothic', sans-serif;
+    --FontTexto: 'Kumbh Sans', sans-serif;
+    --corPrima: #5D50E0; /*Azul*/
+    --corSec: #FBBD44; /*Amrelo*/
+    --corBanner: #8473F7 /*Cor do banner azul*/
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none
+}
+
+#FadeIn{
+-webkit-animation: fadeIn 3s ease-in-out;
+-moz-animation: fadeIn 3s ease-in-out;
+-o-animation: fadeIn 3s ease-in-out;
+animation: fadeIn 3s ease-in-out;
+}
+
+
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+
+main{
+	width: 75%;
+	height: auto;
+}
+
+main > section{
+	padding: 1.5rem 2rem
+}
+
+.MaisComprados{
+	width:100%;
+	height: auto;
+	padding:4rem 3rem; 
+	background-image:url("background.jpeg"); 
+}
+
+section.MaisComprados > div{
+	width: 98%;
+	margin: auto 0;
+	display: flex;
+	flex-direction: column;
+}
+
+div#prodMaisComp{
+		display:flex;
+		flex-direction:row
+	}
+	
+div#prodMais{	
+	flex:1; border-radius: 10px; width:15rem; height: auto; padding: 2rem 1.5rem; margin:10px
+}
+
+div#prodTds{
+		margin-bottom:20px
+	}
+
+.Mais, a.normi{
+	transition: all .5s;
+}
+
+a.card:hover {
+        text-decoration: none
+    }
+
+
+.Mais:hover,
+.Mais:focus {
+    border-color: var(--corPrima);
+    transform: scale(1.05);
+}
+
+a.normi:hover,
+a.normi:focus {
+    border-color: var(--corPrima);
+    opacity: .7
+}
+
+
+p.card-title{
+	margin: 2rem 0
+}
+
+@media screen and (max-width: 1050px) {
+	
+	div#prodMaisComp{
+		flex-direction:column
+	}
+	
+	div#prodMais{
+	width:60%;
+	margin-left:20%
+	}
+	
+	div#prod{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}
+}
+
+@media screen and (max-width: 800px) {
+	
+	div#prod{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}
+	
+}
+
+@media screen and (max-width: 700px) {
+	div#prodMais{
+	width:100%;
+	margin-left:0px
+	}
+	
+}
+
+@media screen and (max-width: 600px) {
+	main{
+		width:300px
+	}
+	div#prodTds{
+		width:300px;
+		margin-left:-78px;
+	}
+}

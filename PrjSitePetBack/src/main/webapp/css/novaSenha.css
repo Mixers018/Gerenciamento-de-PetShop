@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=League+Gothic&display=swap');
+
+:root {
+    --FontTitulo: 'League Gothic', sans-serif;
+    --FontTexto: 'Kumbh Sans', sans-serif;
+    --corPrima: #5D50E0; /*Azul*/
+    --corSec: #FBBD44; /*Amrelo*/
+    --corBanner: #8473F7 /*Cor do banner azul*/
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    outline: 0;
+    list-style: none
+}
+
+
+
+
+body.color{
+    background: #E6E6E6;
+}
+/*Main - In�cio*/
+main {
+    width: 75%;
+    margin: 0rem auto;
+    height: auto;
+    text-align: center;
+}
+
+/*Main - Fim*/
+
+section{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem
+}
+
+.form{
+    width: 45%;
+    margin: 2rem 1.5rem;
+    display: inline-block;
+    padding: 3.5rem 4rem;
+    border-radius: 15px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+form h1{
+    font-size: 30px;
+}
+
+form h1, label{
+    color:rgb(59, 59, 59);
+}
+
+form > input{
+    width: 100%;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 10px;
+    transition: all .7s;
+    background-color: #F1F1F1;
+    border: 1px solid #C5C5C5;
+}
+
+input#submit{
+    background-color: var(--corPrima);
+    color: #ffffff;
+}
+
+input#submit:hover,
+input#submit:focus{
+    box-shadow: 0 0 0 1px var(--corBanner);
+}
+
+input#input:hover,
+input#input:focus {
+    outline: none;
+    border-color: #5fa0e0;
+    box-shadow: 0 0 0 1px var(--corBanner);
+}
+
+div.links > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+
+hr{
+    background-color: black;
+}
+
+div.links > ul li a{
+    transition: all 1s;
+    color: var(--corPrima);
+}
+
+
+.form h2{
+    font-size: 17px;
+    color:#474747;
+    font-weight:normal;
+}
+
+
+a#pet{
+    background-color: var(--corPrima);
+    color:white;
+    font-size: 16px;
+    font-weight: lighter;
+    width:8rem;
+    border-radius: .7rem;
+
+    transition: all .2s;
+    border: none
+}
+
+a#pet:hover {
+    background-color: #E6E6E6;
+    color:black;
+}   
+
+a#pet:active {
+    background-color: var(--corSec);
+    color:black;
+}   

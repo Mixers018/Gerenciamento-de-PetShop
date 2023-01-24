@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=League+Gothic&display=swap');
+
+:root {
+    --FontTitulo: 'League Gothic', sans-serif;
+    --FontTexto: 'Kumbh Sans', sans-serif;
+    --corPrima: #5D50E0; /*Azul*/
+    --corSec: #FBBD44; /*Amrelo*/
+    --corBanner: #8473F7 /*Cor do banner azul*/
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none
+}
+
+main {
+    width: 75%;
+    margin: 0 auto;
+    margin: 5rem auto;
+}
+
+/*Main - Fim*/
+
+main > div, div > input{
+	width:100%;
+}
+
+.row{
+	width:100%
+}
+
+.row div > input{
+	width:110%;
+}
+
+
+div > input{
+	padding:.5rem 1rem;
+	border-radius:5px;
+	border: 1px solid #c9c5c5;
+	transition: all .2s;
+}
+
+hr{
+	background-color: #9fa0a1
+}
+
+div > input[type=file]{
+	border: none;
+}
+
+input#input:hover,
+input#input:focus {
+    outline: none;
+    border-color: #9cc6f0;
+    box-shadow: 0 0 0 2px #cfd0d1;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}

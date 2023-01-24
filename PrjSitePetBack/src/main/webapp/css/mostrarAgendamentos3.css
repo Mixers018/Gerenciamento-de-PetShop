@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=League+Gothic&display=swap');
+
+
+:root {
+    --FontTitulo: 'League Gothic', sans-serif;
+    --FontTexto: 'Kumbh Sans', sans-serif;
+    --corPrima: #5D50E0; /*Azul*/
+    --corSec: #FBBD44; /*Amrelo*/
+    --corBanner: #8473F7 /*Cor do banner azul*/
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+}
+
+main{
+    width:75%;
+    margin: 0 auto;
+}
+
+div.cima{
+    width:100%;
+    padding-bottom: 15px;
+}
+
+h1.titulo{
+    color:rgb(59, 59, 59);
+}
+
+
+input, select{
+	padding:.5rem 1rem;
+	border-radius:5px;
+	border: 1px solid #c9c5c5;
+	transition: all .2s;
+    width: 100%;
+}
+
+input#input:hover,
+input#input:focus,
+select#raca:hover {
+    outline: none;
+    border-color: #9cc6f0;
+    box-shadow: 0 0 0 2px #cfd0d1;
+}
+
+.botao{
+    width:100%;
+    text-align: right;
+    padding-top:3rem;
+    padding-bottom: 3rem
+}
+
+.botao a{
+    background-color: var(--corPrima);
+    color:white;
+    font-size: 20px;
+    font-weight: lighter;
+    width:8rem;
+    border-radius: .7rem;
+    transition: all .2s;
+    border: none
+}
+
+a#pet:hover {
+    background-color: var(--corSec);
+    border: none
+}
+
+div#tabela {
+		width:100%;
+	}
+
+@media screen and (max-width: 800px) {
+	
+	main{
+		width:90%
+	}
+	
+ 	div#tabela {
+		width:100%;
+		background-color:white;
+		overflow:scroll
+	}
+}

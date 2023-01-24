@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=League+Gothic&display=swap');
+
+:root {
+    --FontTitulo: 'League Gothic', sans-serif;
+    --FontTexto: 'Kumbh Sans', sans-serif;
+    --corPrima: #5D50E0; /*Azul*/
+    --corSec: #FBBD44; /*Amrelo*/
+    --corBanner: #8473F7 /*Cor do banner azul*/
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none
+}
+
+main{
+    width:75%;
+    margin-top:70px;
+    margin-bottom:70px;
+}
+
+div.conteudo{
+    width:100%;
+    display:flex;
+}
+
+
+#FadeIn{
+-webkit-animation: fadeIn 3s ease-in-out;
+-moz-animation: fadeIn 3s ease-in-out;
+-o-animation: fadeIn 3s ease-in-out;
+animation: fadeIn 3s ease-in-out;
+}
+
+
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+
+
+
+
+/*conteudo*/
+
+div.subMenu{
+    width:400px;
+}
+
+.botao{
+    width:100%;
+    height:20px;
+    text-align: left;
+}
+
+div.janela{
+    flex:1
+}
+
+div.perfil{
+    height:80px;
+    display:flex;
+    margin-bottom: 15px;
+}
+
+div.imagem{
+    width:80px; 
+}
+
+div.foto{
+    width:90%; 
+    height:90%; 
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    background-color: #eaeaea ;
+}
+
+img#fot{
+    width:100%;
+    height:100%;
+    clip-path:circle();
+}
+
+div.info{
+    flex:1; 
+}
+
+div.nome, div.email{
+    height:50%;
+    text-align: left;
+}
+
+div.nome h1, div.email h2{
+    margin-left:15px;
+}
+
+
+
+div#conta, div#seguranca, div#historico{
+    height:50px;
+}
+
+
+
+div#conta a, div#seguranca a, div#historico a{
+    width:250px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 55px;
+    border:none;
+    color:#474747;
+    font-weight:500;
+}
+
+div#conta a, div#historico a{
+    background-color: white;
+}
+
+div#seguranca a{
+    background-color: #eaeaea;
+}
+
+a#btnConta:hover, a#btnHistorico:hover {
+    background-color: #f5f5f5;
+    color:#474747
+}
+
+a#btnConta:focus, a#btnHistorico:focus {
+    background-color: #f5f5f5;
+    color:#474747
+}
+
+img#icone, img#icone2{
+    height:30px;
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 7px;
+}
+
+img#icone3{
+    height:30px;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+/*fim conteudo*/
+
+/*janela*/
+
+div.cont{
+    width:100%;
+    height:auto
+}
+
+div.senha{
+    width:100%;
+    height: 160px;
+    border-bottom: 1px solid gray;
+}
+
+div.conta{
+    padding-top: 30px;
+    width:100%;
+    height:190px;
+    border-bottom: 1px solid gray;
+}
+
+div.senha a, div.conta a{
+    right:5px;
+    background-color:#eaeaea;
+    border-radius: .7rem;
+    font-size: 17px;
+    color:#474747;
+    font-weight:400;
+    transition: all .2s;
+    border: none
+}
+
+div.senha a{
+    margin-top: 10px;
+}
+
+div.conta a{
+    margin-top: 10px;
+}
+
+a#pet:hover {
+    background-color: var(--corSec);
+    border: none
+}
+
+/*fim janela*/
+
+@media screen and (max-width: 1180px) {
+	
+	div.conta{
+    height:210px;
+	}
+	
+}
+
+@media screen and (max-width: 1150px) {
+    
+    main{
+    width:80%
+    }
+    
+    div.conteudo{
+    flex-direction:column;
+	}
+	
+	div.subMenu{
+	margin-bottom:3rem;
+	width:100%;
+	}
+	
+	div.janela{
+    flex:1;
+    width:100%;
+	}
+	
+	div.senha{
+    height: 135px;
+	}
+	
+	div.conta{
+    height:185px;
+	}
+	
+}
+
+@media screen and (max-width: 1020px) {
+ 
+	div.senha{
+    height: 155px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	
+	div.conta{
+    height:210px;
+	}
+	
+}
+
+@media screen and (max-width: 535px) {
+ 	
+	div.senha{
+    height: 180px;
+	}
+	
+	div.senha{
+	border:none
+	}
+	
+	div.conta{
+	border:none
+	}
+	
+}
